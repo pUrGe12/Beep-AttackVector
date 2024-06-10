@@ -10,6 +10,7 @@ The functions exported are:
 - batscriptA() --> to get the plaintext batch script
 
 We export these functions using the extern command, 
+
 ![image](https://github.com/pUrGe12/Beep-AttackVector/assets/153343775/efc6f57a-3882-4ca5-b9aa-369007e2c3b5)
 
 This allows such functions to be used by any program that loads this DLL. Note that, we have not defined an API entry point for this DLL. 
