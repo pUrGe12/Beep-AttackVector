@@ -9,3 +9,11 @@ GDB does not remove "standard" breakpoints one they are hit. Temporary breakpoin
 
 So, when a breakpoint has been set in the main function, the opcode will be placed somewhere in the memory. WHat we can do is, go over each of the 256 bytes and see if it `0xCC` and if it is then it means that a debugger is analysing it.
 
+![image](https://github.com/pUrGe12/Beep-AttackVector/assets/153343775/a740d7f2-6dee-4f09-8e91-bbcd9aa9615d)
+
+In the above, no debugger has been used, and hence we enter the malicious code (note that, while using this in the loader binary, I have perfomred more checks before executing the malicious code).
+
+Now, if we run the program through GDB, we get this,
+![image](https://github.com/pUrGe12/Beep-AttackVector/assets/153343775/d73f301a-71c1-4886-8c5b-3a2246ee59e2)
+
+Once a debugger has been detected, I terminate the program. 
