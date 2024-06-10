@@ -1,3 +1,8 @@
+# Compile
+Compile the cpp program using the below command,
+
+        g++ -o DetectFakeNet script.cpp -lwininet
+
 # Code explanation
 
 1.	We essentially perform two sets of analysis. One is to check if `SLL certificate` is present, and the other is to check the `HTML response` and validate that.
