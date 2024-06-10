@@ -40,5 +40,7 @@ Alternatively, we can directly import the _frequency table_ for the script as th
 -	It then injects the BSdecoded.dat into an `autorun registry` and terminates itself. 
 -	When the system is rebooted, the _BSdecoded.dat_ file executes, which in turn runs _PSscriptDecoded.ps1_. 
 -	The PowerShell script contains `AES 128-bit CBC` mode encrypted C++ code, which it decodes once executed, compile that into an executable file (`test.exe`) and run that. After that, it can be made to destroy the test.exe file.
--	The final payload lies in the test.exe binary which is a shell-code for a backdoor (ideally, but in this case, it’s just a message-box) and the binary injects this shell-code into a suspended thread and queues it.
+-	The final payload lies in the **test.exe** binary which is a shell-code for a backdoor (ideally, but in this case, it’s just a message-box) and the binary injects this shell-code into a suspended thread and queues it.
+
+The explanations for individual files are present in the respective sections... (add links here)
 
