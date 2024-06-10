@@ -1,3 +1,8 @@
+## Compile
+Compile this program using,
+
+    g++ -o load loader.cpp -lwininet -static -static-libgcc -static-libstdc++
+
 ## Explanation
 
 The loader binary uses a range of **anti-sandbox and anti-debugging** techniques,
