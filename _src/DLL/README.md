@@ -1,6 +1,6 @@
 This contains functions to transfer the CMD script, the PowerShell script and functions to decode the Huffman codes. It must be compiled using the following,
 
-    g++ -shared -o Big.dll <filename.cpp>
+    g++ -shared -o Big.dll <filename.cpp> -static -static-libgcc -static-libstdc++
 
 The functions exported are:
 
